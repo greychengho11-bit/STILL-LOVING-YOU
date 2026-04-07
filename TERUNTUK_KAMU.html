@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untuk Kamu - JESEN ALDY GEOL</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background: linear-gradient(180deg,#0b0517,#160b2e,#1e0f3d);
+color:white;
+height:100vh;
+overflow:hidden;
+}
+
+.slide{
+position:absolute;
+width:100%;
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:30px;
+opacity:0;
+transform:translateY(20px);
+transition:1s;
+}
+
+.slide.active{
+opacity:1;
+transform:translateY(0);
+}
+
+h1{
+font-family:'Dancing Script',cursive;
+font-size:42px;
+color:#ffb3e6;
+text-shadow:0 0 20px rgba(255,150,220,.6);
+margin-bottom:15px;
+}
+
+p{
+max-width:600px;
+line-height:1.8;
+font-size:18px;
+opacity:.9;
+}
+
+button{
+margin-top:30px;
+padding:14px 26px;
+border:none;
+border-radius:30px;
+background:linear-gradient(45deg,#ff8bd6,#b388ff);
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 0 20px rgba(255,150,220,.3);
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+.nameGlow{
+color:#ffd6f7;
+text-shadow:0 0 15px #ff8bd6,0 0 30px #b388ff;
+font-weight:600;
+}
+
+.stars{
+position:fixed;
+width:100%;
+height:100%;
+top:0;
+left:0;
+z-index:-1;
+overflow:hidden;
+}
+
+.star{
+position:absolute;
+width:2px;
+height:2px;
+background:white;
+animation:twinkle 3s infinite;
+}
+
+@keyframes twinkle{
+0%{opacity:.2}
+50%{opacity:1}
+100%{opacity:.2}
+}
+
+.heart{
+position:fixed;
+font-size:16px;
+pointer-events:none;
+animation:floatUp 3s linear forwards;
+}
+
+@keyframes floatUp{
+0%{transform:translateY(0);opacity:1}
+100%{transform:translateY(-200px);opacity:0}
+}
+
+.bigHeart{
+font-size:120px;
+animation:pop 1s ease;
+}
+
+@keyframes pop{
+0%{transform:scale(.3)}
+100%{transform:scale(1)}
+}
+
+.fade{
+animation:fade 1s;
+}
+
+@keyframes fade{
+from{opacity:0}
+to{opacity:1}
+}
+
+.buttons{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
+</style>
+</head>
+
+<body>
+
+<audio autoplay loop>
+<source src="https://cdn.pixabay.com/audio/2022/03/15/audio_9d7b2c1c59.mp3" type="audio/mp3">
+</audio>
+
+<div class="stars" id="stars"></div>
+
+<!-- Slide 1 -->
+<div class="slide active">
+<h1>Untuk kamu… <span class="nameGlow">JESEN ALDY GEOL</span></h1>
+<p>Dari seseorang yang sangat sayang kamu…<br><br>GREYNATHAN</p>
+<button onclick="next()">Buka pelan ya… aku serius ini</button>
+</div>
+
+<!-- Slide 2 -->
+<div class="slide">
+<h1>Aku mau jujur sesuatu…</h1>
+<p>
+Aku sayang banget sama kamu<br>
+Bukan sekadar sayang biasa<br>
+Tapi sayang yang bikin aku takut kehilangan
+</p>
+</div>
+
+<!-- Slide 3 -->
+<div class="slide">
+<h1>Jujur…</h1>
+<p>
+Aku sering anxious<br>
+Aku sering overthinking<br>
+Aku takut kamu berubah<br>
+Aku takut kamu capek sama aku
+</p>
+</div>
+
+<!-- Slide 4 -->
+<div class="slide">
+<p>
+Aku tahu aku bukan yang paling sempurna<br>
+Aku banyak kurangnya<br>
+Aku kadang nyebelin<br>
+Aku kadang terlalu nempel<br><br>
+
+Tapi itu karena…<br>
+Aku beneran ga mau kehilangan kamu
+</p>
+</div>
+
+<!-- Slide 5 -->
+<div class="slide">
+<h1>JESEN ALDY GEOL…</h1>
+<p>
+Kamu itu rumah buat aku<br>
+Tempat paling nyaman<br>
+Tempat aku balik ketika semuanya capek
+</p>
+</div>
+
+<!-- Slide 6 -->
+<div class="slide">
+<p>
+Aku takut suatu hari…<br>
+Kamu pergi pelan pelan<br>
+Tanpa aku sadar<br>
+Dan aku kehilangan kamu
+</p>
+</div>
+
+<!-- Slide 7 -->
+<div class="slide">
+<p>
+Aku ga mau itu terjadi<br>
+Aku mau kamu tetap di sini<br>
+Sama aku<br>
+Kita perbaiki semuanya pelan pelan
+</p>
+</div>
+
+<!-- Slide 8 -->
+<div class="slide">
+<p>
+Aku mungkin terlalu takut kehilangan<br>
+Tapi itu karena kamu sangat berarti<br><br>
+
+Aku milih kamu<br>
+Hari ini<br>
+Besok<br>
+Dan seterusnya
+</p>
+</div>
+
+<!-- Slide 9 -->
+<div class="slide">
+<h1>Jadi…</h1>
+<p>
+Aku cuma mau bilang<br>
+Aku sayang kamu banget<br>
+Dan aku ga mau kehilangan kamu
+</p>
+</div>
+
+<!-- Ending -->
+<div class="slide">
+<h1>Stay ya…</h1>
+<p>
+Sama aku<br>
+<span class="nameGlow">JESEN ALDY GEOL 🤍</span><br><br>
+- GREYNATHAN
+</p>
+
+<div class="buttons">
+<button onclick="love()">❤️ Aku juga sayang kamu</button>
+<button onclick="hug()">🤍 Peluk aku</button>
+</div>
+
+<div id="result"></div>
+
+</div>
+
+<script>
+let slides=document.querySelectorAll('.slide')
+let index=0
+
+function next(){
+slides[index].classList.remove('active')
+index++
+if(index>=slides.length) index=slides.length-1
+slides[index].classList.add('active')
+}
+
+document.body.addEventListener('click',()=>{
+if(index<slides.length-1) next()
+})
+
+function love(){
+document.getElementById("result").innerHTML=
+"<div class='bigHeart'>❤️</div><p class='fade'>makasih udah tetap di sini… aku tenang kalau sama kamu</p>"
+confetti()
+}
+
+function hug(){
+document.getElementById("result").innerHTML=
+"<div class='bigHeart'>🤍</div><p class='fade'>sini aku peluk… aku juga takut kehilangan kamu</p>"
+}
+
+function confetti(){
+for(let i=0;i<30;i++){
+let el=document.createElement("div")
+el.className="heart"
+el.innerHTML="❤️"
+el.style.left=Math.random()*100+"%"
+el.style.top="70%"
+document.body.appendChild(el)
+
+setTimeout(()=>el.remove(),3000)
+}
+}
+
+// floating hearts cursor
+document.addEventListener("mousemove",function(e){
+let heart=document.createElement("div")
+heart.className="heart"
+heart.innerHTML="💖"
+heart.style.left=e.clientX+"px"
+heart.style.top=e.clientY+"px"
+document.body.appendChild(heart)
+
+setTimeout(()=>heart.remove(),2000)
+})
+
+// stars
+for(let i=0;i<120;i++){
+let star=document.createElement("div")
+star.className="star"
+star.style.left=Math.random()*100+"%"
+star.style.top=Math.random()*100+"%"
+star.style.animationDelay=Math.random()*3+"s"
+document.getElementById("stars").appendChild(star)
+}
+</script>
+
+</body>
+</html>
